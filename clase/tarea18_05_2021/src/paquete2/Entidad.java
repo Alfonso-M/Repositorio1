@@ -9,6 +9,12 @@ public class Entidad {
 	String sprite;
 	int defensa;
 	
+	public void recibirDaño(int daño) {
+		int vida=this.getVida();
+		vida-=daño-this.getDefensa();
+		this.setVida(vida);
+	}
+	
 	//Getters y Setters
 	public String getNombre() {
 		return nombre;

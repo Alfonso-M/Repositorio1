@@ -15,5 +15,9 @@ public class Principal {
 		pollo.setVida(10);
 		
 		System.out.println(pollo);
+		
+		pollo.recibirDaño(6);
+		
+		System.out.println(pollo);
 	}
 }
